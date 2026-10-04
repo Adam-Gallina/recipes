@@ -1,0 +1,17 @@
+<h1>{{ title }}</h1>
+<h2>About</h2>
+<p id="notes">
+    {{ notes }}
+</p>
+<h2>Ingredients</h2>
+<ul id="ingredients">
+    {{# each ingredients }}
+        <li><b>{{ quantity }}</b> {{ name }}</li>
+    {{/ each }}
+</ul>
+<h2>Steps</h2>
+<ol id="steps">
+    {{# each steps }}
+        <li>{{ this }}</li>
+    {{/ each }}
+</ol>
